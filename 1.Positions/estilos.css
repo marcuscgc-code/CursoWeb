@@ -1,6 +1,46 @@
 div {
-    color: white;
+    color: rgb(207, 69, 69);
     padding: 10px;
     height: 50px;
     border: 1px solid black;
+}
+.relative{
+    background-color: brown;
+    position: relative;
+    color: white;
+}
+
+#relative{
+    background-color: brown;
+    position: relative;
+    color: white;
+    top:40px;
+    left: 40px;
+}
+
+#absoluto{
+    height: 25px;
+    width: 70px;
+    color: black;
+    background: orange;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.absoluto{
+    height: 25px;
+    width: 70px;
+    color: black;
+    background: orange;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.absoluto_fluxo{
+    height: 25px;
+    width: 70px;
+    color: rgb(228, 3, 3);
+    background: rgb(0, 255, 51);
+    position: absolute;
 }
