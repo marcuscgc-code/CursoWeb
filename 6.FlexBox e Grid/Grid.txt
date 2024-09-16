@@ -1,0 +1,14 @@
+Grid
+O que é? O Grid Layout é um sistema de layout bidimensional que permite criar designs complexos tanto em linhas quanto em colunas.
+
+Como funciona? O Grid Layout utiliza dois componentes principais:
+
+Contêiner Grid: O elemento pai que define a estrutura da grade.
+Itens Grid: Os elementos filhos que são posicionados dentro da grade.
+Propriedades principais do contêiner:
+
+display: grid; – Ativa o layout de grade no contêiner.
+grid-template-columns – Define a largura das colunas (repeat(3, 1fr) cria três colunas iguais).
+grid-template-rows – Define a altura das linhas.
+grid-gap – Define o espaçamento entre as células da grade.
+grid-template-areas – Permite definir áreas nomeadas na grade para posicionar os itens.

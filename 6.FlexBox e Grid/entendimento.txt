@@ -1,0 +1,22 @@
+Flexbox
+O que é? O Flexbox (ou "Flexible Box Layout") é um modelo de layout que permite distribuir espaço e alinhar itens dentro de um contêiner de forma mais eficiente, mesmo quando seu tamanho é desconhecido e/ou dinâmico.
+
+Como funciona? Flexbox trabalha com dois componentes principais:
+
+Contêiner Flexível: O elemento pai que contém os itens flexíveis.
+Itens Flexíveis: Os elementos filhos que são organizados dentro do contêiner flexível.
+Propriedades principais do contêiner:
+
+display: flex; – Ativa o layout flexível no contêiner.
+flex-direction – Define a direção dos itens (row, column, row-reverse, column-reverse).
+justify-content – Alinha os itens horizontalmente (flex-start, center, space-between, space-around, space-evenly).
+align-items – Alinha os itens verticalmente (flex-start, center, baseline, stretch).
+flex-wrap – Controla a quebra dos itens se não houver espaço suficiente (nowrap, wrap, wrap-reverse).
+
+
+Neste exemplo, o contêiner .grid-container define uma grade com três colunas, e os itens são distribuídos automaticamente ao longo dessas colunas e linhas, com espaçamento entre eles.
+
+Comparação Rápida
+Flexbox é ideal para layouts unidimensionais, como uma linha ou coluna de itens.
+Grid é melhor para layouts bidimensionais, com linhas e colunas, permitindo um controle mais robusto sobre a disposição dos itens.
+Ambas as técnicas são muito úteis e muitas vezes usadas em conjunto para criar layouts complexos e responsivos. Se você tiver mais perguntas ou precisar de exemplos específicos, estou aqui para ajudar!
