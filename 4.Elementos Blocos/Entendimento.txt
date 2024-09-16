@@ -1,0 +1,14 @@
+ELEMENTOS BLOCOS
+Elemento Block
+<h1> <p> <table>
+-> Ocupam todo o espaçamento da tela, e ficam um abaixo do outro
+
+Elemento Inline
+<link>
+<span>
+<img>
+A largura da caixa é de acordo com o conteudo, e fica um do lado do outro caso caiba
+
+Elemento INLINE-Block
+Ele nao ocupa a tela outra, usa a largura do conteudo
+Fica um abaixo do outro
