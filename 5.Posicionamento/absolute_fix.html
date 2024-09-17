@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+
+            background: blue;
+        }
+        #container{
+            background:#fff ;
+            width: 800px;
+            margin: 10px auto;
+        }
+        h1{
+            
+        }
+
+        p{
+           width: 300px;;
+
+        }
+        .relative{
+            border: 1px solid red;
+            position: relative;
+            top: -200px;
+            left: 400px;
+        }
+
+        .absolute{
+            position: absolute;
+            border: 1px solid red;
+            top: 0px;
+            background: #f2f2f2;
+            right: 20px;
+        }
+    </style>
+    <title>Posicionamento (Static, Relative, Absolute,Fixed)</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Posicionamento</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nemo pariatur numquam quasi iste quidem necessitatibus vitae, commodi ab doloribus consequatur cumque, quis maiores suscipit, laborum possimus accusamus iure atque!
+
+        </p>
+
+        <p class="absolute"> <!--Sai do fluxo normal e não afeta o restante dos elementos-->
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae corrupti expedita totam ut, eaque illo aut fugit adipisci, non repellat architecto nesciunt voluptatum impedit cupiditate maiores delectus quaerat culpa molestias?
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nisi, aperiam in fuga modi nihil laudantium autem quibusdam sunt perferendis consequatur quis omnis veritatis voluptates placeat sint officia quisquam voluptas!
+        </p>
+    </div>
+</body>
+</html>
