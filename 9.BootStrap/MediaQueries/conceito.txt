@@ -1,1 +1,3 @@
 Usado pra fazer intervenções, meio que templates prontos pra diversos tipos despostiivos e funções
+Definir formatações especificas pra diferentes tipos
+@media
