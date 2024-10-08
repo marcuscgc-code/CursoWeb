@@ -4,37 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
-    <title>Posições no Css</title>
+    <title>Posições no CSS</title>
 </head>
 <body>
-    <!--Static-->
-    <div>Static</div>
-    <div>Static</div>
-    <div id="relative">Relative alterado
-        <div id="absoluto">Absoluto alterado</div>
-    </div>
+    <!-- Exemplo de elemento com posição estática -->
+    <section>
+        <div>Static</div>
+        <div>Static</div>
+    </section>
 
-    <div>Static</div>
-    <p>Este é meu paragrafo</p>    
-    <div class="relative">Relative</div>
-    <div class="absoluto">Absoluto na pagina</div>
-    <div class="absoluto_fluxo">Absoluto no fluxo</div>
-    <div id="fixo">FIXO</div>
-    <div id="separador">Bom dia brasil</div>
+    <!-- Exemplo de elemento com posição relativa -->
+    <section>
+        <div id="relative">Relative alterado
+            <div id="absoluto">Absoluto alterado</div>
+        </div>
+    </section>
+
+    <section>
+        <div>Static</div>
+        <p>Este é meu parágrafo</p>    
+        <div class="relative">Relative</div>
+        <div class="absoluto">Absoluto na página</div>
+        <div class="absoluto_fluxo">Absoluto no fluxo</div>
+        <div id="fixo">FIXO</div>
+    </section>
+
+    <div id="separador">Bom dia Brasil</div>
+
     <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, tempora. Sit voluptates hic deleniti qui, expedita distinctio possimus, explicabo illum minima quaerat quibusdam, fugiat ratione natus! Reprehenderit voluptatum tempora provident?</div>
-   
+
     <!--
-        1.Static segue o fluxo normal, é o padrao
-        2.Relative ele segue o fluxo, mas ele fica relativo a partir do fluxo padrao[ Sua posição inical é do fluxo, 
-        os leves posicionamento é feito top,rigt,left,bottom]
-        3. O Absoluto é usado a partir da referencia
-        Caso não tenha uma div PAI, será usado a tela. 
-        Caso tenha, ele pega a partir da pai a referencia.
-        4.FIXED é sempre referente pela TELA. Ela segue tela
-    
-    
+        Explicação sobre tipos de posição no CSS:
+        1. Static: Segue o fluxo normal da página, é o padrão.
+        2. Relative: Segue o fluxo, mas pode ser deslocado a partir de sua posição original usando top, right, left, bottom.
+        3. Absolute: Se posiciona em relação ao elemento pai mais próximo com posição relativa; se não houver, usa a tela como referência.
+        4. Fixed: Posicionado em relação à janela (viewport), permanecendo fixo na tela mesmo ao rolar a página.
     -->
-    
-   
+
+    <!-- Exemplo de sticky -->
+    <div class="sticky">
+        Sticky
+    </div>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quasi excepturi atque beatae, cupiditate corporis, illo accusamus ex voluptate molestias cumque neque tempora voluptas deleniti quae id exercitationem sint ducimus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, fuga modi accusantium ipsa doloribus amet eaque ipsam. Temporibus repudiandae provident suscipit ut nesciunt tenetur praesentium, velit voluptatum repellendus neque laboriosam
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum quam quibusdam aliquam. Aspernatur quo corrupti non, dolorum nisi repudiandae architecto quos pariatur aperiam nemo quaerat provident facilis tempore. A, in.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis architecto quas aliquid quisquam veniam mollitia animi doloribus, eligendi, libero, vel laborum. Modi sit adipisci quae. Quo saepe nostrum sed!Loremlore
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero at voluptatem placeat praesentium fuga? Ex dignissimos corporis eos officia sed debitis neque, tempora accusamus sunt ab quia, suscipit quis quam!Lorem
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum modi sequi fugiat delectus ipsam, totam perferendis? Officiis fuga qui, dicta culpa voluptatum nam inventore eius magni maiores aperiam, iste ratione?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, sed asperiores. Totam illum laborum itaque aliquid aperiam eaque magnam. Itaque esse deserunt aliquam velit eveniet earum impedit quo harum repellat?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates molestiae incidunt tempora aliquam consequatur est! Optio, non voluptatibus voluptas nobis quos vel aut quasi in nesciunt expedita adipisci consequatur molestias.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti fuga numquam voluptate ex ipsam nam dolorum, obcaecati molestias quibusdam hic fugit inventore. Laborum temporibus perspiciatis mollitia, quaerat cumque quibusdam. Numquam.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit accusantium, harum esse veniam eaque earum. Vel quas eveniet nobis quibusdam ratione consectetur sed eius, a officia tempora voluptate deleniti est.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. At deserunt quidem nam eligendi velit, praesentium eos ab quod voluptas aspernatur, et doloribus suscipit saepe enim inventore ad exercitationem, animi soluta.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quisquam soluta harum pariatur magni enim, magnam officiis veniam suscipit nisi quam corrupti ipsam repellat aut perferendis a unde recusandae. Commodi?
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quasi excepturi atque beatae, cupiditate corporis, illo accusamus ex voluptate molestias cumque neque tempora voluptas deleniti quae id exercitationem sint ducimus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, fuga modi accusantium ipsa doloribus amet eaque ipsam. Temporibus repudiandae provident suscipit ut nesciunt tenetur praesentium, velit voluptatum repellendus neque laboriosam
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum quam quibusdam aliquam. Aspernatur quo corrupti non, dolorum nisi repudiandae architecto quos pariatur aperiam nemo quaerat provident facilis tempore. A, in.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis architecto quas aliquid quisquam veniam mollitia animi doloribus, eligendi, libero, vel laborum. Modi sit adipisci quae. Quo saepe nostrum sed!Loremlore
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero at voluptatem placeat praesentium fuga? Ex dignissimos corporis eos officia sed debitis neque, tempora accusamus sunt ab quia, suscipit quis quam!Lorem
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum modi sequi fugiat delectus ipsam, totam perferendis? Officiis fuga qui, dicta culpa voluptatum nam inventore eius magni maiores aperiam, iste ratione?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, sed asperiores. Totam illum laborum itaque aliquid aperiam eaque magnam. Itaque esse deserunt aliquam velit eveniet earum impedit quo harum repellat?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates molestiae incidunt tempora aliquam consequatur est! Optio, non voluptatibus voluptas nobis quos vel aut quasi in nesciunt expedita adipisci consequatur molestias.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti fuga numquam voluptate ex ipsam nam dolorum, obcaecati molestias quibusdam hic fugit inventore. Laborum temporibus perspiciatis mollitia, quaerat cumque quibusdam. Numquam.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit accusantium, harum esse veniam eaque earum. Vel quas eveniet nobis quibusdam ratione consectetur sed eius, a officia tempora voluptate deleniti est.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. At deserunt quidem nam eligendi velit, praesentium eos ab quod voluptas aspernatur, et doloribus suscipit saepe enim inventore ad exercitationem, animi soluta.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quisquam soluta harum pariatur magni enim, magnam officiis veniam suscipit nisi quam corrupti ipsam repellat aut perferendis a unde recusandae. Commodi?
 </body>
 </html>

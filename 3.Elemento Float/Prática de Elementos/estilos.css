@@ -10,7 +10,7 @@ body {
 /* Notícias (mantido) */
 .noticia {
     background: grey;
-    padding: 5px;
+    padding: 2px;
     width: 280px;
     margin: 5px;
     float: left;

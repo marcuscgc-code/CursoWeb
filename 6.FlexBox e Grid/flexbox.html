@@ -6,19 +6,22 @@
     <title>Flexbox Example</title>
     <style>
         .container {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
+            display: flex; /* Ativa o flexbox */
+            flex-direction: row; /* Define a direção dos itens (padrão: row) */
+            justify-content: space-around; /* Espaçamento igual ao redor dos itens */
+            align-items: center; /* Alinha os itens verticalmente no centro */
+            flex-wrap: wrap; /* Permite que os itens quebrem em múltiplas linhas, se necessário */
+            height: 100vh; /* Define a altura da tela inteira */
+            background-color: #f0f0f0; /* Cor de fundo do contêiner */
         }
+
         .item {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
-            margin: 10px;
-            text-align: center;
-            flex: 1;
+            background-color: #4CAF50; /* Cor de fundo dos itens */
+            color: white; /* Cor do texto */
+            padding: 20px; /* Espaçamento interno de 20px */
+            margin: 10px; /* Espaçamento externo de 10px */
+            text-align: center; /* Centraliza o texto */
+            flex: 1 1 150px; /* Permite que o item cresça e encolha, com tamanho base de 150px */
         }
     </style>
 </head>
@@ -27,6 +30,8 @@
         <div class="item">Item 1</div>
         <div class="item">Item 2</div>
         <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
     </div>
 </body>
 </html>

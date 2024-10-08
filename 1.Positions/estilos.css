@@ -14,7 +14,7 @@ div {
     background-color: brown;
     position: relative;
     color: white;
-    top:40px;
+    top:60px;
     left: 40px;
 }
 
@@ -59,4 +59,13 @@ div {
     position: relative;
     top: 50px;
     background: grey;
+}
+
+.sticky {
+    position: sticky;
+    top: 0; /* Fixa o elemento ao atingir o topo da página */
+    background-color: yellow;
+    padding: 20px;
+    font-size: 18px;
+    z-index: 1000; /* Garante que o sticky fique acima dos outros elementos */
 }

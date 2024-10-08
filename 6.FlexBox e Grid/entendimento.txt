@@ -1,22 +1,93 @@
-Flexbox
-O que é? O Flexbox (ou "Flexible Box Layout") é um modelo de layout que permite distribuir espaço e alinhar itens dentro de um contêiner de forma mais eficiente, mesmo quando seu tamanho é desconhecido e/ou dinâmico.
-
-Como funciona? Flexbox trabalha com dois componentes principais:
-
-Contêiner Flexível: O elemento pai que contém os itens flexíveis.
-Itens Flexíveis: Os elementos filhos que são organizados dentro do contêiner flexível.
-Propriedades principais do contêiner:
-
-display: flex; – Ativa o layout flexível no contêiner.
-flex-direction – Define a direção dos itens (row, column, row-reverse, column-reverse).
-justify-content – Alinha os itens horizontalmente (flex-start, center, space-between, space-around, space-evenly).
-align-items – Alinha os itens verticalmente (flex-start, center, baseline, stretch).
-flex-wrap – Controla a quebra dos itens se não houver espaço suficiente (nowrap, wrap, wrap-reverse).
+1. display: flex;
+O que faz: Ativa o comportamento de layout Flexbox em um contêiner. Isso transforma o contêiner em um contêiner flexível e permite o uso das outras propriedades Flexbox.
+Exemplo:
 
 
-Neste exemplo, o contêiner .grid-container define uma grade com três colunas, e os itens são distribuídos automaticamente ao longo dessas colunas e linhas, com espaçamento entre eles.
+css
+Copiar código
+.container {
+    display: flex;
+}
 
-Comparação Rápida
-Flexbox é ideal para layouts unidimensionais, como uma linha ou coluna de itens.
-Grid é melhor para layouts bidimensionais, com linhas e colunas, permitindo um controle mais robusto sobre a disposição dos itens.
-Ambas as técnicas são muito úteis e muitas vezes usadas em conjunto para criar layouts complexos e responsivos. Se você tiver mais perguntas ou precisar de exemplos específicos, estou aqui para ajudar!
+
+
+2. flex-direction
+O que faz: Define a direção dos itens flexíveis dentro do contêiner. Pode organizar os itens em uma linha ou coluna, e a ordem pode ser inversa.
+Valores possíveis:
+row (padrão): Itens dispostos em uma linha horizontal, da esquerda para a direita.
+row-reverse: Itens dispostos em uma linha horizontal, da direita para a esquerda.
+column: Itens dispostos em uma coluna vertical, de cima para baixo.
+column-reverse: Itens dispostos em uma coluna vertical, de baixo para cima.
+Exemplo:
+
+css
+Copiar código
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+3. justify-content
+O que faz: Controla o alinhamento dos itens ao longo do eixo principal (horizontal para row, vertical para column).
+Valores possíveis:
+flex-start (padrão): Alinha os itens no início do contêiner.
+center: Centraliza os itens.
+flex-end: Alinha os itens no final do contêiner.
+space-between: Distribui os itens com espaço igual entre eles.
+space-around: Adiciona espaçamento ao redor de cada item.
+space-evenly: Distribui os itens com espaçamento igual ao redor e entre eles.
+Exemplo:
+
+
+css
+Copiar código
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+4. align-items
+O que faz: Alinha os itens ao longo do eixo cruzado (vertical para row, horizontal para column).
+Valores possíveis:
+flex-start: Alinha os itens no início do eixo cruzado.
+center: Centraliza os itens no eixo cruzado.
+flex-end: Alinha os itens no final do eixo cruzado.
+stretch (padrão): Itens se estendem para preencher o contêiner (se possível).
+baseline: Alinha os itens com base na linha de base de seu conteúdo.
+Exemplo:
+
+
+css
+Copiar código
+.container {
+    display: flex;
+    align-items: center;
+}
+
+
+
+5. flex-wrap
+O que faz: Controla se os itens devem ou não quebrar em várias linhas quando o espaço no contêiner é insuficiente.
+Valores possíveis:
+nowrap (padrão): Todos os itens permanecem em uma única linha.
+wrap: Itens quebram em várias linhas, se necessário.
+wrap-reverse: Itens quebram em várias linhas, mas a ordem de empilhamento é inversa.
+Exemplo:
+
+css
+Copiar código
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+Como o Flexbox Funciona:
+Flexbox é ideal para layouts unidimensionais, ou seja, ele organiza os itens em uma linha ou coluna, enquanto distribui automaticamente o espaço entre eles de acordo com as configurações do contêiner e dos itens. Isso permite que os elementos sejam facilmente alinhados, distribuídos e ajustados, tornando o layout mais dinâmico e responsivo.
+
+Comparação com Grid:
+Flexbox: Focado em organizar itens em uma única direção (horizontal ou vertical), sendo ideal para alinhar uma fila ou uma coluna de itens.
+Grid: Trabalha em duas dimensões (linhas e colunas), o que oferece mais controle sobre o layout de elementos complexos.
