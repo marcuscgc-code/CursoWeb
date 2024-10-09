@@ -53,10 +53,13 @@
 
     <h2>Alerta com botão fechar</h2>
     <div class="alert alert-danger alert-dismissible">
+      <!--O close que faz o X ficar na direita
+      data-dismiss e alert-dismissible que fecha.
+      -->
       <button class="close" type="button" data-dismiss="alert">
-        &times;
+        &times;<!--Cria um simbolo x-->
       </button>
-      <strong>Fechar</strong> Alerta com botão fechar
+      <strong>Fechar</strong>   Aperte o botao pra fechar
     </div>
     <br><br>
     
@@ -74,8 +77,14 @@
 
 
     <h2>Barra de progresso</h2>
+    <!--Barra de progresso, a div principal usa progress
+      se nao colocar background = bg-danger ou bg-sucess ou bg-light ou bg-dark
+      width é a largura que a barra com background quer preencher
+
+      TREINO : pode tentar fazer esses valores dinamicos
+    -->
     <div class="progress">
-      <div class="progress-bar" style="width: 50%;">50%</div>
+      <div class="progress-bar bg-dark " style="width: 20%;">20%</div>
     </div>
     <br>
 
@@ -84,21 +93,21 @@
     </div>
     <br>
 
-    <h2>Altura</h2>
-    <div class="progress" style="height: 2px;">
+    <h3>Altura da barra - é dentro da div principal com style="height:90px"</h2>
+    <div class="progress" style="height: 90px;">
       <div class="progress-bar bg-danger" style="width: 40%;"></div>
     </div>
     <br>
     
 
-    <h2>Listrado</h2>
+    <h3>Listrado dentro da div secundaria da progress-bar , adicione progress-bar-striped</h2>
     <div class="progress">
       <div class="progress-bar bg-warning progress-bar-striped" style="width: 70%;">70%</div>
     </div>
     <br>
     
 
-    <h2>Animado</h2>
+    <h3>Animado dentro da div secundaria da progress-bar , adicione progress-bar-animated</h2>
     <div class="progress">
       <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width: 70%;">70%</div>
     </div>
