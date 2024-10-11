@@ -1,0 +1,11 @@
+script do js em navegadores sáo capazes de interpretar e executar.
+Pode ser usado no cliente-side, cliente-side do lado ao servidor
+conecta em browser e servidor = protocolo http
+
+js é uma linguagem interpretada, mantida pela w3c e w3schollls.com onde tem manual de js, html e css documentações e etc... como consulta no dia a dia
+Node, React
+
+js como cliente-side sendo executado no brownser permite aplicardinamica elementos da pagina --> permitindo paginas incriveis
+
+interpreatda - significa que o script o brownser vai inteprretar e entender e executar 
+

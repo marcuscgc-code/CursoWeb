@@ -1,0 +1,10 @@
+deixa os layouts mais flexiveis
+Bootstrap faz sites responsivos.
+wrap-reverse
+column-reverse
+wrap
+
+flex-basics
+flex-grow
+flex-shrink
+flex

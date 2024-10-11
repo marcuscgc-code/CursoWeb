@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #conteudo{
+                background: #dcdcdc;
+                height: 400px;
+               
+                display: flex;
+                flex-direction: row;
+                /*row row-reverse column column-reverse*/
+                /*nowrap  wrap  wrap-reverse*/
+                flex-wrap: wrap;
+
+                /*flex*-start flex-end center space-between space-around
+                posiçao entre items
+                flex start - esquerda pra direita
+                flex-end ;direita pra esquerda
+                space-between - separaçao entre elementos de modo simultaneo 
+                commeçam colados nas extremidades
+                space-round: o mesmo de space-between mas se afasta mais das extremidades
+                */
+                justify-content: flex-between;
+                /*strech :itens completam toda a area de altura do container pai
+                
+                center: não ficam esticados, horizontal e vertical bem centralizado 
+                
+                flex-start : itens colocados na parte superior
+                
+                flex-end : itens colocados na parte infeiror   
+                
+                baseline: há um elemento base de linha em que todos os itens sege a linha base, mesmo que elementos tenham tamanho diferente, O
+                O TEXTO continuara alinhado*/
+                align-items: stretch;
+
+                /*Define proporção de espaço ocupado por um item*/
+                flex-grow: 0;
+/*Encolher  é shrink*/
+                flex-shrink: 1;
+        }
+        .item{
+            background: white;
+            border: 1px solid gray;
+            width: 100px;
+            height: 100px;
+            flex-grow: 0;
+            margin: 10px;
+        }
+
+        .item1{
+
+            flex-grow: 1;
+        }
+
+        .item2{
+
+            flex-grow: 2;
+        }
+
+        .item3{
+
+            flex-grow: 3;
+        }
+        .item4{
+            flex-grow: 4;
+        }
+    </style>
+</head>
+<body>
+    <h1> FlexBox</h1>
+    <div id="conteudo">
+        <div class="item item1">01</div>
+        <div class="item item2">02</div>
+        <div class="item">03</div>
+        <div class="item">04</div>
+    </div>
+</body>
+</html>

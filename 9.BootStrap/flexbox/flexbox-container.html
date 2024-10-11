@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<title>Flexbox - Flexible Box Layout</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			
+			#conteudo {
+				background: #dcdcdc;
+				height: 600px;
+				display: flex;
+
+				/*
+				row|row-reverse|column|column-reverse 
+				*/
+				flex-direction: row ;
+
+				/*
+				nowrap|wrap|wrap-reverse
+				*/
+				flex-wrap: nowrap ;
+
+				/*
+				flex-start|flex-end|center|space-between|space-around
+				*/
+				justify-content: space-around ;
+
+				/*
+				stretch|center|flex-start|flex-end|baseline
+				*/
+				align-items: baseline ;
+
+                flex-shrink: 1;
+
+			}
+
+			.item {
+				width: 200px;
+				height: 100px;
+				margin: 10px;
+				background: rgb(204, 106, 106);
+				border: 1px solid gray;
+				flex-grow: 0;
+				/*Define  tamanho inicial dos itens */
+				flex-basis: auto;
+			}
+
+			/*Assim como o flex-grow é esticado proporcional no aumentativo após aumentar a tela
+				O shrink é pra reduzir a tela proprocional ao diminuir a tela
+
+			
+			*/
+.item1{
+    flex-shrink: 1
+}
+
+.item2{
+    flex-shrink: 2;
+
+}
+
+.item3{
+
+flex-grow: 5;
+}
+.item4{
+flex-grow: 4;
+}
+
+         
+		</style>
+
+	</head>
+
+	<body>	
+
+		<h1>Flexbox</h1>
+		<div id="conteudo">
+			<div class="item item1">01</div>
+			<div class="item item2">02</div>
+			<div class="item item3">03</div>
+			<div class="item">04</div>
+			<div class="item">05 <br> mais conteúdo</div>
+		</div>
+
+		
+	</body>
+
+</html>
