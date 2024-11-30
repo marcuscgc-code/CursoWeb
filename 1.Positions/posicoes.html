@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstrando CSS Position</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .section {
+            height: 200px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        /* Static Position */
+        .static {
+            background-color: #6c757d;
+            position: static; /* Comportamento padrão (não se move do fluxo normal) */
+        }
+
+        /* Relative Position */
+        .relative {
+            background-color: #17a2b8;
+            position: relative;
+            top: 20px; /* Movido 20px para baixo em relação à sua posição original */
+        }
+
+        /* Absolute Position */
+        .absolute-container {
+            position: relative;
+            height: 200px;
+            background-color: #f8f9fa;
+            margin-bottom: 20px;
+            border: 2px dashed #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #ffc107;
+            padding: 10px;
+            color: black;
+        }
+
+        /* Fixed Position */
+        .fixed {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #dc3545;
+            padding: 10px;
+            color: white;
+            z-index: 1000;
+        }
+
+        /* Sticky Position */
+        .sticky-container {
+            height: 1000px;
+            background-color: #f0f0f0;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: #28a745;
+            padding: 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="section static">Static Position</div>
+
+    <div class="section relative">Relative Position (moved 20px down)</div>
+
+    <div class="absolute-container">
+        Contêiner com Posição Relative
+        <div class="absolute">Absolute Position (inside container)</div>
+    </div>
+
+    <div class="fixed">Fixed Position (sempre visível no topo direito)</div>
+
+    <div class="sticky-container">
+        <div class="sticky">Sticky Position (fixa ao rolar)</div>
+        <div class="section" style="background-color: #007bff;">
+            Conteúdo da página
+        </div>
+    </div>
+
+</body>
+</html>
